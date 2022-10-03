@@ -2,9 +2,10 @@ import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 from translate import Translator
 import wikipedia
+from config import token
 
 # авторизация
-vk = vk_api.VkApi(token="Add your token")
+vk = vk_api.VkApi(token=token)
 session_api = vk.get_api()
 longpool = VkLongPoll(vk)
 
